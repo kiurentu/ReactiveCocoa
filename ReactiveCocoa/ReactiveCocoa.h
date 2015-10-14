@@ -33,12 +33,12 @@ FOUNDATION_EXPORT const unsigned char ReactiveCocoaVersionString[];
 #import <ReactiveCocoa/NSIndexSet+RACSequenceAdditions.h>
 #import <ReactiveCocoa/NSURLConnection+RACSupport.h>
 #import <ReactiveCocoa/NSUserDefaults+RACSupport.h>
-#import <ReactiveCocoa/RACBacktrace.h>
 #import <ReactiveCocoa/RACBehaviorSubject.h>
 #import <ReactiveCocoa/RACChannel.h>
 #import <ReactiveCocoa/RACCommand.h>
 #import <ReactiveCocoa/RACCompoundDisposable.h>
 #import <ReactiveCocoa/RACDisposable.h>
+#import <ReactiveCocoa/RACDynamicPropertySuperclass.h>
 #import <ReactiveCocoa/RACEvent.h>
 #import <ReactiveCocoa/RACGroupedSignal.h>
 #import <ReactiveCocoa/RACKVOChannel.h>
@@ -63,6 +63,7 @@ FOUNDATION_EXPORT const unsigned char ReactiveCocoaVersionString[];
 #import <ReactiveCocoa/RACUnit.h>
 
 #ifdef __IPHONE_OS_VERSION_MIN_REQUIRED
+	#import <ReactiveCocoa/MKAnnotationView+RACSignalSupport.h>
 	#import <ReactiveCocoa/UIActionSheet+RACSignalSupport.h>
 	#import <ReactiveCocoa/UIAlertView+RACSignalSupport.h>
 	#import <ReactiveCocoa/UIBarButtonItem+RACCommandSupport.h>
